@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLY UP</title>
+    <link rel="shortcut icon" href="image/feather.svg"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href=" Style/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid p-0">
+      <!-- Nabar design --> 
+       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a href="" class="navbar-brand text-light fs-4 grad-font text-light fw-bold">
+            <i class="bi bi-feather text-primary mx-1 "></i>FLY UP
+          </a>
+          <button 
+          class="navbar-toggler shadow-none border-0"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight">
+          <i class="bi bi-person-lines-fill text-light"></i>
+        </button>
+        <div class="d-none d-lg-block">
+          <ul class="nav justify-content-center text-uppercase">
+            <li><a href="" class="hover-txt nav-link fw-bold text-light">HOME</a></li>
+            <li><a href="" class="hover-txt nav-link fw-bold text-light">ABOUT</a></li>
+            <li><a href="" class="hover-txt nav-link fw-bold text-light">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <ul class="nav">
+            <li>
+              <a href="" class="nav-link ">
+                <i class="bi bi-search border-end border-secondary pe-3 fw-bold text-light"></i>
+              </a>
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-globe text-warning"></i>
+              <select class="form-select border-0 shadow-none bg-transparent">
+                <option value="en" class="text-success  bg-light">ENG</option>
+                <option value="en" class="text-success  bg-light">KHM</option>
+                <option value="en" class="text-success  bg-light">IND</option>
+              </select>
+            </li>
+            <li id="btn" class="me-4">
+              <button class="btn btn-outline-primary rounded-5 text-light border-3  px-5" id="registerBtn">Register</button>
+            </li>
+            <li id="btn">
+              <button class="btn btn-outline-primary rounded-5 text-light border-3  px-5" id="signInBtn">SIGN IN</button>
+            </li>
+          </ul>
+        </div>
+        </div>
+       </nav>
+       
+       <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+          <div class="offcanvas-header border-bottom">
+            <a href="" class="navbar-brand text-dark fs-3 grad-font fw-bold"><i class="bi bi-feather text-success mx-1"></i>FLY UP</a>
+            <button 
+            type="button"
+            class="btn-close bg-light-subtle"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-flex border-bottom justify-content-center">
+              <div class="col-12">
+                <ul class="navbar-nav text-uppercase">
+                  <li><a href="" class="hover-txt nav-link fw-bold mt-3 ps-3 ">HOME</a></li>
+                  <li><a href="" class="hover-txt nav-link fw-bold mt-3 ps-3 ">ABOUT</a></li>
+                  <li><a href="" class="hover-txt nav-link fw-bold mt-3 ps-3 ">CONTACT US</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center px-2 border my-3">
+              <i class="bi bi-search fs-4"></i>
+              <input type="text" class="form-control bg-transparent border-0 shadow-none"
+              placeholder="Search...">
+            </div>
+            <div class="dropdown border-top p-4">
+              <li class="d-flex align-items-center">
+                <i class="bi bi-globe text-secondary"></i>
+                <select class="form-select border-0 shadow-none bg-transparent">
+                  <option value="en" class="text-success  bg-light">ENG</option>
+                  <option value="en" class="text-success  bg-light">KHM</option>
+                  <option value="en" class="text-success  bg-light">IND</option>
+                </select>
+              </li>
+            </div>
+            <h3>FOLLOW US ON</h3>
+            <ul class="navbar-nav" id="nav">
+              <li class="hover-socail">
+                <a href="" class="nav-link text-light suse-font"
+                  ><i class="bi bi-twitter text-light fs-4 p-2"></i>Twitter</a
+                >
+              </li>
+              <li class="hover-socail">
+                <a href="" class="nav-link text-light suse-font"
+                  ><i class="bi bi-facebook text-light fs-4 p-2"></i>facebook</a
+                >
+              </li>
+              <li class="hover-socail">
+                <a href="" class="nav-link text-light suse-font"
+                  ><i class="bi bi-telegram text-light fs-4 p-2"></i>Telegram</a
+                >
+              </li>
+              <li class="hover-socail">
+                <a href="" class="nav-link text-light suse-font"
+                  ><i class="bi bi-instagram text-light fs-4 p-2"></i>Instagram</a
+                >
+              </li>
+             <div class="d-flex justify-content-center btn_off suse-font">
+              <li class="me-4">
+                <button id="registerBtn" class="btn rounded-5 text-light border-3 px-3 mt-3">
+                 Register
+                </button>
+              </li>
+              <li>
+                <button class="btn rounded-5 text-light border-3 px-3 mt-3" id="signInBtn" >
+                  SIGN IN
+                </button>
+              </li>
+             </div>
+            </ul>
+          </div>
+        </div>
+        <!-- Register -->
+        <div id="registerForm" style="display: none;" >
+          <h2 class="text-center">Register</h2>
+          <form>
+              <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+              </div>
+              <button type="submit" class="btn btn-success w-100">Submit</button>
+          </form>
+      </div>
+      <!-- sign in -->
+      <div id="signInForm"   style="display: none;">
+        <h2 class="text-center">Sign In</h2>
+        <form>
+            <div class="mb-3">
+                <label for="signInEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signInEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="signInPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signInPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+        </form>
+    </div>
+ 
+        <!-- Main contain -->
+         
+  <main >
+    <!-- Slay -->
+ 
+    <div class="slay p-5"> 
+      <div class="d-flex justify-content-center pt-5 " >
+        <h1 class="suse-font fw-bold text-light">Visited</h1>
+       </div>
+       <div class="container mt-5 d-lg-none" id="Sart">
+        <h2 class="text-center mb-4">Find Your Stay</h2>
+        <div class="search-container">
+          <form id="searchForm">
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination</label>
+              <input type="text" id="destination" class="form-control" placeholder="Enter city or destination" required>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label for="checkin" class="form-label">Check-in Date</label>
+                <input type="date" id="checkin" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="checkout" class="form-label">Check-out Date</label>
+                <input type="date" id="checkout" class="form-control" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">
+                <label for="adults" class="form-label">Adults</label>
+                <input type="number" id="adults" class="form-control" min="1" value="2">
+              </div>
+              <div class="col-4">
+                <label for="children" class="form-label">Children</label>
+                <input type="number" id="children" class="form-control" min="0" value="0">
+              </div>
+              <div class="col-4">
+                <label for="rooms" class="form-label">Rooms</label>
+                <input type="number" id="rooms" class="form-control" min="1" value="1">
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn search-btn w-100">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+       <div class="container mt-5 d-lg-none" id="Sort">
+        <h2 class="text-center mb-4">Find Your Stay</h2>
+        <div class="search-container">
+          <form id="searchForm">
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination</label>
+              <input type="text" id="destination" class="form-control" placeholder="Enter city or destination" required>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label for="checkin" class="form-label">Check-in Date</label>
+                <input type="date" id="checkin" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="checkout" class="form-label">Check-out Date</label>
+                <input type="date" id="checkout" class="form-control" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">
+                <label for="adults" class="form-label">Adults</label>
+                <input type="number" id="adults" class="form-control" min="1" value="2">
+              </div>
+              <div class="col-4">
+                <label for="children" class="form-label">Children</label>
+                <input type="number" id="children" class="form-control" min="0" value="0">
+              </div>
+              <div class="col-4">
+                <label for="rooms" class="form-label">Rooms</label>
+                <input type="number" id="rooms" class="form-control" min="1" value="1">
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn search-btn w-100">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+          <div class="container">
+            <div id="slayCarousel" class="carousel slide slay-carouse" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slayCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slayCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slayCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <!-- Slides -->
+               <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="image/Ankor.jpg" class="object-fit-none d-block" alt="Slide 1" id="img">
+                 
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Ankor Wat</h4>
+                </div>
+              </div>
+                <div class="carousel-item ">
+                  <img src="image/Phnom Penh.jpg" alt="Slide 2" class="object-fit-none d-block" id="img">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Phnom Penh</h4>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img src="image/Kampot.jpg" alt="Slide 3" class="object-fit-none d-block" id="img">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4  class="text-dark">Kap Pot</h4>
+                  </div>
+                </div>
+               </div>
+               <!-- Button controll -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#slayCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#slayCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center pt-5 ">
+            <h1 class="fw-bold grad-font border-bottom text-light">Welcome All</h1>
+          </div>
+    </div>
+    <!-- Improve -->
+     <div class="hero-baner">
+      <div class="container">
+        <div class="row p-0">
+          <div class="col-lg-6 text-light d-grid pt-5 m-5">
+            <h1 >Travel has never <br>
+              felt this cozy</h1>
+              <br>
+              <h4 class="mt-lg-5 mt-md-2">Book an entire place all to yourself</h4>
+              <button id="btn-send" class="btn shadow-none btn-primary m-md-2 m-lg-5">Discover vacation rentals</button>
+          </div>
+ 
+        </div>
+      </div>
+     </div>
+     <!-- ReSearch -->
+     <div class="container mt-5  " id="search">
+      <h2 class="text-center mb-4">Find Your Stay</h2>
+      <div class="search-container">
+        <form id="searchForm">
+          <div class="mb-3">
+            <label for="destination" class="form-label">Destination</label>
+            <input type="text" id="destination" class="form-control" placeholder="Enter city or destination" required>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <label for="checkin" class="form-label">Check-in Date</label>
+              <input type="date" id="checkin" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="checkout" class="form-label">Check-out Date</label>
+              <input type="date" id="checkout" class="form-control" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4">
+              <label for="adults" class="form-label">Adults</label>
+              <input type="number" id="adults" class="form-control" min="1" value="2">
+            </div>
+            <div class="col-4">
+              <label for="children" class="form-label">Children</label>
+              <input type="number" id="children" class="form-control" min="0" value="0">
+            </div>
+            <div class="col-4">
+              <label for="rooms" class="form-label">Rooms</label>
+              <input type="number" id="rooms" class="form-control" min="1" value="1">
+            </div>
+          </div>
+  
+          <div class="text-center">
+            <button type="submit" class="btn search-btn w-100">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Traveling -->
+    <div class="container my-5">
+      <h2 class="section-title">Homes guests love</h2>
+            <div class="row">
+              <!-- Card 1 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-md-3 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card1.webp" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Aparthotel Stare Miasto</h5>
+                    <p class="text-muted mb-1">Old Town, Poland</p>
+                    <span class="badge bg-primary">8.8</span>
+                    <p>Excellent · 3,051 reviews</p>
+                    <p><strong>Starting from KHR 623,531</strong></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-md-3 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card2.webp" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">7Seasons Apartments</h5>
+                    <p class="text-muted mb-1">Budapest, Hungary</p>
+                    <span class="badge bg-primary">8.8</span>
+                    <p>Excellent · 11,299 reviews</p>
+                    <p><strong>Starting from KHR 557,762</strong></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card3.jpg" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Oriente Palace Apartments</h5>
+                    <p class="text-muted mb-1">Madrid, Spain</p>
+                    <span class="badge bg-primary">9.0</span>
+                    <p>Wonderful · 3,250 reviews</p>
+                    <p><strong>Starting from KHR 527,339</strong></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-md-3 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card4.webp" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Numa I Vita Apartments</h5>
+                    <p class="text-muted mb-1">Florence, Italy</p>
+                    <span class="badge bg-primary">9.2</span>
+                    <p>Wonderful · 1,454 reviews</p>
+                    <p><strong>Starting from KHR 858,362</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <h2 class="section-title mt-5">Stay at our top unique properties</h2>
+           <div class="row">
+              <!-- Card 5 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-md-3 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card5.jpg" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Waldschenke Stendenitz</h5>
+                    <p class="text-muted mb-1">Germany, Neuruppin</p>
+                    <span class="badge bg-primary">8.7</span>
+                    <p>Excellent · 373 reviews</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-md-3 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card6.jpg" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Harbor View</h5>
+                    <p class="text-muted mb-1">United Kingdom, Uig</p>
+                    <span class="badge bg-primary">8.9</span>
+                    <p>Excellent · 136 reviews</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6 pb-md-3 pb-3">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card7.jpg"id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa rural La Marquesa</h5>
+                    <p class="text-muted mb-1">Spain, Valera de Abajo</p>
+                    <span class="badge bg-primary">9.5</span>
+                    <p>Exceptional · 65 reviews</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 8 -->
+              <div class=" col-lg-4 col-xl-3 col-12 col-md-6">
+                <div class="card overflow-hidden bg-transparent border-0">
+                  <img src="image/card8.webp" id="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Domki ROSSE</h5>
+                    <p class="text-muted mb-1">Poland, Jastrzębia Góra</p>
+                    <span class="badge bg-primary">9.8</span>
+                    <p>Exceptional · 132 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+    <!-- Trending -->
+  <div class="container my-4">
+    <section>
+        <h2 class="mb-3">Trending destinations</h2>
+        <p>Travelers searching for Cambodia also booked these</p>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card destination-card overflow-hidden bg-transparent border-0">
+                    <img src="image/Ankor.jpg" class="h-100 overflow-hidden" >
+                    <div class="card-img-overlay text-warning  ">
+                        <h5 class="card-title">Siem Reap 🇰🇭</h5>
+                        <p class="small">Average price: KHR 170,527.11</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card destination-card overflow-hidden bg-transparent border-0">
+                    <img src="image/Phnom Penh.jpg" class="h-100 overflow-hidden" >
+                    <div class="card-img-overlay text-warning  ">
+                        <h5 class="card-title">Phnom Penh 🇰🇭</h5>
+                        <p class="small">Average price: KHR 380,596.45</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+  <!-- Popular place -->
+   <div class="container my-4 ">
+    <h2 class="fw-bold">Popular with travelers from Cambodia</h2>
+    <!-- tab-pill -->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-domestic-tab" data-bs-toggle="pill" data-bs-target="#pills-domestic" type="button" role="tab" aria-controls="pills-domestic" aria-selected="true">Domestic cities</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-international-tab" data-bs-toggle="pill" data-bs-target="#pills-international" type="button" role="tab" aria-controls="pills-international" aria-selected="false">International cities</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-regions-tab" data-bs-toggle="pill" data-bs-target="#pills-regions" type="button" role="tab" aria-controls="pills-regions" aria-selected="false">Regions</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-countries-tab" data-bs-toggle="pill" data-bs-target="#pills-countries" type="button" role="tab" aria-controls="pills-countries" aria-selected="false">Countries</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-places-tab" data-bs-toggle="pill" data-bs-target="#pills-places" type="button" role="tab" aria-controls="pills-places" aria-selected="false">Places to stay</button>
+      </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- tap domestic cities -->
+    <div class="tab-pane fade show active small" id="pills-domestic" role="tabpanel" aria-labelledby="pills-domestic-tab">
+      <div class="row ms-5">
+        <div class="col-md-3 col-6">Phnom Penh hotels</div>
+        <div class="col-md-3 col-6">Siem Reap hotels</div>
+        <div class="col-md-3 col-6">Battambong hotels</div>
+        <div class="col-md-3 col-6">Kampot hotels</div>
+      </div>
+      <div class="row mt-1 ms-5">
+        <div class="col-md-3 col-6">Koh Rong hotels</div>
+        <div class="col-md-3 col-6">
+          Koh Dach hotels</div>
+        <div class="col-md-3 col-6">
+          Krong Kracheh hotels</div>
+        <div class="col-md-3 col-6">Banlung hotels</div>
+      </div>
+      <div class="row mt-1 ms-5 ">
+        <div class="col-md-3 col-6">Koh Rong Sanloem hotels</div>
+        <div class="col-md-3 col-6">Kep hotels</div>
+        <div class="col-md-3 col-6">Kratie hotels</div>
+        <div class="col-md-3 col-6">Sihanoukville hotels</div>
+      </div>
+    </div>
+  
+    <!-- international cities -->
+     <div class="tab-pane fade small" id="pills-international" role="tabpanel" aria-labelledby="pills-international-tab">
+      <div class="row ms-5">
+        <div class="col-md-3 col-6">Bangkok hotels <br>
+        <p class="text-success">Thailand</p></div>
+        <div class="col-md-3 col-6">Don Det hotels <br>
+          <p class="text-success">Laos</p></div>
+        <div class="col-md-3 col-6">Pattaya hotels <br>
+        <p class="text-success">Thailand</p></div>
+        <div class="col-md-3 col-6">Hanoi hotels <br>
+        <p class="text-success">Vietnam</p></div>
+      </div>
+      <div class="row ms-5">
+        <div class="col-md-3 col-6">Tokyo hotels <br>
+        <p class="text-success">Japan</p></div>
+        <div class="col-md-3 col-6">Kuala Lumpur hotels <br>
+        <p class="text-success">Malaysia</p></div>
+        <div class="col-md-3 col-6">Paris hotels <br>
+        <p class="text-success">France</p></div>
+        <div class="col-md-3 col-6">Vientiane hotels <br>
+        <p class="text-success">Loas</p></div>
+      </div>
+      <div class="row ms-5">
+        <div class="col-md-3 col-6">Taipei hotels <br>
+        <p class="text-success">Chinies Taipie</p></div>
+      </div>
+     </div>
+  
+      <!-- Regions Tab -->
+        <div class="tab-pane fade" id="pills-regions" role="tabpanel" aria-labelledby="pills-regions-tab">
+          <div class="row mt-1 ms-5 ">
+            <div class="col-md-3 col-6">Mondulkiri Provinces</div>
+            <div class="col-md-3 col-6">Siargao Island</div>
+            <div class="col-md-3 col-6">Surin Province</div>
+            <div class="col-md-3 col-6">Tirana County </div>
+          </div>
+          <div class="row mt-1 ms-5 ">
+            <div class="col-md-3 col-6">Osaka Prefecture</div>
+            <div class="col-md-3 col-6">Luang Prabang</div>
+            <div class="col-md-3 col-6">Phuket Province</div>
+            <div class="col-md-3 col-6">Stung Treng Province</div>
+          </div>
+          <div class="row mt-1 ms-5 ">
+            <div class="col-md-3 col-6">Ratanakiri Province</div>
+            <div class="col-md-3 col-6">Preah Sihanouk Province</div>
+            <div class="col-md-3 col-6">Ha Long Bay</div>
+            <div class="col-md-3 col-6">Chanthaburi Province</div>
+          </div>
+      </div>
+      <!-- Countries Tab -->
+      <div class="tab-pane fade" id="pills-countries" role="tabpanel" aria-labelledby="pills-countries-tab">
+        <div class="row mt-1 ms-5 ">
+          <div class="col-md-3 col-6"> Cambodia</div>
+          <div class="col-md-3 col-6">France</div>
+          <div class="col-md-3 col-6"> Japany</div>
+          <div class="col-md-3 col-6"> Malaysia</div>
+        </div>
+        <div class="row mt-1 ms-5 ">
+          <div class="col-md-3 col-6">  Italy</div>
+          <div class="col-md-3 col-6">United States of America</div>
+          <div class="col-md-3 col-6">Indonesia</div>
+          <div class="col-md-3 col-6">Australia</div>
+        </div>
+        <div class="row mt-1 ms-5 ">
+          <div class="col-md-3 col-6">United Kingdom</div>
+          <div class="col-md-3 col-6"> Canada</div>
+          <div class="col-md-3 col-6"> Taiwan</div>
+          <div class="col-md-3 col-6">New Zealand</div>
+        </div>
+      </div>
+
+      <!-- Places to Stay Tab -->
+      <div class="tab-pane fade " id="pills-places" role="tabpanel" aria-labelledby="pills-places-tab">
+        <div class="row mt-1 ms-5 ">
+          <div class="col-md-3 col-6">  Cheap hotels</div>
+          <div class="col-md-3 col-6">Hostels</div>
+          <div class="col-md-3 col-6"> Guest Houses</div>
+          <div class="col-md-3 col-6">Resorts</div>
+        </div>
+        <div class="row mt-1 ms-5 ">
+          <div class="col-md-3 col-6">Apartments</div>
+          <div class="col-md-3 col-6">Homestays</div>
+          <div class="col-md-3 col-6">Serviced apartments</div>
+          <div class="col-md-3 col-6">Villas</div>
+        </div>
+        <div class="row mt-1 ms-5 ">
+          <div class="col-md-3 col-6">Beach Hotels</div>
+          <div class="col-md-3 col-6">Hotels with Pools</div>
+          <div class="col-md-3 col-6">Pet-Friendly Hotels</div>
+          <div class="col-md-3 col-6">5-Star Hotels</div>
+        </div>
+      </div>
+  </div>
+   </div>
+  </main>
+  <footer>
+        <div class="container my-4 " id="footer" >
+       <div class="d-flex justify-content-between " >
+        <div class="row mt-2">
+          <div class="d-grid small pt-2">
+            <p class="fw-bold">Support</p>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Coronavirus (COVID-19) FAQs</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Manage your trips</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Contact Customer Service</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Safety Resource Center</a>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="d-grid small pt-2">
+            <p class="fw-bold">Discover</p>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Genius loyalty program</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Seasonal and holiday deals</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Travel articles</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Flyup.com for Business</a>
+ 
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="d-grid small pt-2">
+            <p class="fw-bold">Terms and settings</p>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Genius loyalty program</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Seasonal and holiday deals</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Travel articles</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Flyup.com for Business</a>
+ 
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="d-grid small pt-2">
+            <p class="fw-bold">Partners</p>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Genius loyalty program</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Seasonal and holiday deals</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Travel articles</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Flyup.com for Business</a>
+ 
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="d-grid small pt-2 ">
+            <p class="fw-bold">About</p>
+            <a class="nav-link fw-bold text-dark mb-1" href="">Genius loyalty program</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Seasonal and holiday deals</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Travel articles</a>
+            <a class="nav-link fw-bold text-dark mb-1 " href="">Flyup.com for Business</a>
+ 
+          </div>
+        </div>
+       </div>
+        </div>
+        <!-- collapse -->
+        <div class="container my-4 d-lg-none ">
+          <div class="accordion" id="footerDropdown">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSupport">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupport" aria-expanded="false" aria-controls="collapseSupport">
+                  Support
+                </button>
+              </h2>
+              <div id="collapseSupport" class="  collapse" aria-labelledby="headingSupport" data-bs-parent="#footerDropdown">
+                <div class="accordion-body">
+                  <ul class="nav d-grid">
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Coronavirus (COVID-19) FAQs</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Manage your trips</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Contact Customer Service</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Safety Resource Center</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingDiscover">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Discover" aria-expanded="false" aria-controls="Discover">
+                  Discover
+                </button>
+              </h2>
+              <div id="Discover" class="  collapse" aria-labelledby="headingDiscover" data-bs-parent="#footerDropdown">
+                <div class="accordion-body">
+                  <ul class="nav d-grid">
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Genius loyalty program</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Seasonal and holiday deals</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Travel articles</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Flyup.com for Business</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Traveller Review Awards</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Car rental</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Flight finder</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Restaurant reservations</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Flyup.com for Travel Agents</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTerms">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Term" aria-expanded="false" aria-controls="Term">
+                  Terms and Settings
+                </button>
+              </h2>
+              <div id="Term" class="  collapse" aria-labelledby="headingTerms" data-bs-parent="#footerDropdown">
+                <div class="accordion-body">
+                  <ul class="nav d-grid">
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Privacy & cookies</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Terms & conditions</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Partner dispute</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Modern Slavery Statement</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Human Rights Statement</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Partners -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingPartners">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Partner" aria-expanded="false" aria-controls="Partner">
+                  Partners
+                </button>
+              </h2>
+              <div id="Partner" class="  collapse" aria-labelledby="headingPartners" data-bs-parent="#footerDropdown">
+                <div class="accordion-body">
+                  <ul class="nav d-grid">
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Extranet login</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Partner help</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">List your property</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Become an affiliate</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- about -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingPartners">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#About" aria-expanded="false" aria-controls="About">
+                  About
+                </button>
+              </h2>
+              <div id="About" class="  collapse" aria-labelledby="headingAbout" data-bs-parent="#footerDropdown">
+                <div class="accordion-body">
+                  <ul class="nav d-grid">
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">About Flyup.com</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">How We Work</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Sustainability</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Press center</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Careers</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Investor relations</a></li>
+                    <li><a href="#" class="nav-link fw-bold text-dark mb-1">Corporate contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-4">
+          <div class="d-lg-flex justify-content-between">
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageCurrencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="image/Camflag.jpg" alt="Flag" style="width: 30px; height: 20px;"> KHR - Cambodian Riel
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageCurrencyDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="image/usaFlag.png" alt="Flag" style="width: 30px; height: 20px;"> USD - United States Dollar
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="image/Euroflag.jpg" alt="Flag" style="width: 30px; height: 20px;"> EUR - Euro
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="image/Camflag.jpg" alt="Flag" style="width: 30px; height: 20px;"> KHR - Cambodian Riel
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="image/japan-flag.jpg" alt="Flag" style="width: 30px; height: 20px;"> JPY - Japanese Yen
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-dark-emphasis text-center small mt-2">
+              Flyup.com is part of Booking Holdings Inc., the world leader in online travel and related services. <br>
+              Copyright © 2006–2024 Flyup.com™. All rights reserved.
+            </div>
+            <div class="text-center mb-3 mb-md-3">
+              <a href="#" class="text-muted text-decoration-none">www.Flyup.com</a>
+            </div>
+          </div>
+        </div>
+  </footer>
+    </div>
+ 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFwVaRleHRuA2FlbQIxMAABHeJ8NPxpuUluvD5NUmA0Tvsq1PT5WepPIo3x1wglWc0p1KQJk3XhLP_1yQ_aem_6BW4iUjVsOAjuuZ37nFuFw"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/script.js"></script>
+</html>

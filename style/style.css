@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=SUSE:wght@100..800&display=swap');
+.container-fluid > main {
+    width: 100%;
+    background-color: rgb(246 246 241);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-fluid > main > .slay {
+  width: 100%;
+  background-image: url(/image/Hotel\ bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-fluid > main > .hero-baner {
+    width: 100%;
+    background-image: url(/image/relax.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-fluid > footer {
+  width: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ 
+
+  @media (max-width: 450px) {
+    #slayCarousel {
+      display: none;  
+    }
+  }
+ @media(max-width: 450px){
+  #footer{
+    display: none;
+  }
+ }
+  @media (min-width: 450px) {
+    #Sart{
+      display: none;  
+    }
+  }
+  @media (max-width: 850px) {
+    #Sort {
+      display: none;  
+    }
+  }
+  @media (max-width: 850px) {
+    #footer {
+      display: none;  
+    }
+  }
+  @media (max-width: 450px) {
+    #search {
+      display: none;  
+    }
+  }
+  #btn-send{
+    width: 250px;
+  }
+/* Rigister */
+.search-container {
+    background: #fff;
+    border: 3px solid #ffb703;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+
+  .search-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .form-label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .search-container {
+      padding: 15px;
+    }
+  }
+ 
+ .nav-link:hover{
+   text-decoration: underline;
+ }
+.grad-font{
+    font-family:  Inter-Variable, Helvetica, Arial, sans-serif;
+}
+.suse-font{
+    font-family:  SuisseIntl, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#offcanvasRight {
+    background-color: hsl(166, 85%, 49%)
+}
+#nav > .hover-socail{
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+#nav > .hover-socail:hover,
+#nav > .btn_off > li > button:hover {
+    background-color: rgb(91, 84, 193) ;  
+}
+/* Slides */
+.slay-carousel img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+  
+  }
+ #img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+ }
+  .slay-carousel img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); 
+  }
+ .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .destination-card{
+    height: 450px;
+    object-fit: cover;
+  }
+  .destination-card:hover{
+    transform: scale(1.01);
+  }
+
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+/* card hover */
+ #card{
+  transition: 0.2s ease-in-out;
+
+ }
+ #card:hover{
+  transform: scale(1.03);
+ }
+ 
+@media  (max-width: 576px) {
+    .offcanvas{
+        width: 85% !important;
+    }
+ }
+ .hover-txt{
+  transition: 0.2s ease-in-out !important;
+ }
+ .hover-txt:hover{
+ color: #0385ff !important;
+
+ }
+ /* register */
+ #registerForm,
+ #signInForm {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  z-index: 9999999;
+  top: 30%;
+  left: 35%;
+   
+}
